@@ -1,6 +1,8 @@
 cython
 pyaml
-xformers
 scikit-learn
 open3d
 viser
+# pip3 install -U xformers --index-url https://download.pytorch.org/whl/cu121
+--find-links https://download.pytorch.org/whl/cu121
+xformers
