@@ -229,7 +229,8 @@ class PyplotSegment (FrameArraySegment):
 
             # Convert the canvas to a NumPy array
             assert (width, height) == canvas.get_width_height()
-            res = np.frombuffer(canvas.tostring_rgb(), dtype='uint8').reshape(height, width, 3)
+            # res = np.frombuffer(canvas.tostring_rgb(), dtype='uint8').reshape(height, width, 3)
+            res = np.frombuffer(canvas.buffer_rgba(), dtype='uint8').reshape(height, width, 4)[:, :, :3]
             pl.close(fig)
 
         if expedite:
