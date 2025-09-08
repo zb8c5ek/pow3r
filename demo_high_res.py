@@ -3,7 +3,7 @@
 
 import os
 import os.path as osp
-os.environ['PYOPENGL_PLATFORM'] = 'egl'
+os.environ['PYOPENGL_PLATFORM'] = 'EGL'
 import numpy as np
 import torch
 import tempfile

@@ -132,3 +132,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /.idea
+/demo_frames_output
+/demo_output
