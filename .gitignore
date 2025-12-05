@@ -132,4 +132,7 @@ dmypy.json
 # Pyre type checker
 .pyre/
 /.idea
-/output
+/demo_frames_output
+/demo_output
+dust3r
+dust3rbk
